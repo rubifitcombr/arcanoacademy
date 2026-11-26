@@ -21,9 +21,9 @@ a{color:inherit;text-decoration:none}
 button,a{-webkit-tap-highlight-color:transparent}
 .wrap{width:min(var(--max),calc(100% - 44px));margin-inline:auto}
 header{position:sticky;top:0;z-index:20;background:rgba(8,8,13,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-.nav{height:104px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.brand{display:flex;align-items:center;justify-content:flex-start;flex:0 0 164px;width:164px;height:100px;min-width:164px;overflow:visible}
-.brand img{display:block;width:164px;height:100px;max-height:100px;object-fit:contain;opacity:1;visibility:visible;flex-shrink:0;background:#08080d}
+.nav{height:88px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;justify-content:flex-start;flex:0 0 132px;width:132px;height:84px;min-width:132px;overflow:visible}
+.brand img{display:block;width:132px;height:78px;max-height:78px;object-fit:contain;opacity:1;visibility:visible;flex-shrink:0;background:#08080d}
 .links{display:flex;align-items:center;justify-content:center;flex:1;min-width:0;gap:28px;color:#d6d4df;font-size:14px}
 .links a{transition:color .2s}
 .links a:hover{color:var(--blue)}
@@ -55,13 +55,11 @@ header{position:sticky;top:0;z-index:20;background:rgba(8,8,13,.88);backdrop-fil
 .route.seller{background:linear-gradient(155deg,#40152f,#211326 62%,#14121c);border:1px solid #ed16855c}
 .route-label{font-size:10px;letter-spacing:.18em;font-weight:800;color:var(--blue)}
 .route.seller .route-label{color:#ff67b3}
-.phone{width:100%;height:155px;border:5px solid #0a0a11;border-radius:16px;background:linear-gradient(145deg,#1b3345,#243a50 45%,#18121f);position:relative;overflow:hidden;box-shadow:0 8px 20px #0005}
-.phone:before{content:"";position:absolute;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,#1dcde9aa,transparent 68%);right:-16px;top:-18px}
-.phone:after{content:"▶";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:37px;height:37px;border-radius:50%;background:#080a10c9;display:grid;place-items:center;font-size:13px;padding-left:2px;color:white;border:1px solid #ffffff55}
-.product-stack{height:155px;display:flex;align-items:center;justify-content:center;position:relative}
-.product-box{width:112px;height:118px;border-radius:17px;background:linear-gradient(145deg,#f3d9e9,#a47c99);transform:rotate(-8deg);box-shadow:0 12px 30px #0007;position:relative}
-.product-box:before{content:"";position:absolute;inset:16px 25px;border-radius:12px;background:linear-gradient(160deg,#fff,#f2c2da 55%,#a44b80)}
-.product-box:after{content:"";position:absolute;width:135px;height:54px;border-radius:12px;background:#11121d;border:1px solid #ffffff3b;right:-48px;bottom:-8px;transform:rotate(14deg);box-shadow:0 10px 20px #0006}
+.card-visual{width:100%;height:155px;border-radius:14px;overflow:hidden;position:relative;isolation:isolate;box-shadow:0 10px 26px #0006;background:#0b131e}
+.card-visual svg{display:block;width:100%;height:100%;object-fit:cover}
+.creator-visual{border:1px solid #16c8e84a}
+.seller-visual{border:1px solid #ed16854a}
+.card-visual:after{content:"";position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 28px #05060a66;border-radius:inherit}
 .route h3{font:800 23px Manrope;margin:14px 0 2px}
 .route p{margin:0;color:#c5c4ce;font-size:12px;line-height:1.45}
 .visual-foot{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;color:#d7d5de;font-size:12px}
@@ -122,7 +120,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 .foot strong{color:white}
 .mobile-cta{display:none}
 @media(max-width:900px){.links{gap:16px}.hero-grid{gap:30px}.hero h1{font-size:54px}.hero-visual{min-height:430px}.visual-orbit{width:360px;height:360px}}
-@media(max-width:760px){.nav{height:78px;gap:10px}.brand{flex:0 0 126px;width:126px;min-width:126px;height:74px}.brand img{width:126px;height:72px;max-height:72px}.nav>.btn{padding:11px 13px;font-size:12px;white-space:nowrap}.links{display:none}.hero{padding:48px 0}.hero-grid,.format-grid{grid-template-columns:1fr;gap:28px}.hero-visual{min-height:390px;order:-1}.hero h1{font-size:43px;letter-spacing:-.012em;word-spacing:.035em}.section{padding:62px 0}.paths,.investment{grid-template-columns:1fr}.audience{grid-template-columns:1fr}.offer{grid-template-columns:1fr}.offer .btn{width:100%}.ticker .wrap{justify-content:flex-start}.platform-card{padding:16px}.route{min-height:260px}.phone,.product-stack{height:135px}.mobile-cta{display:block;position:fixed;z-index:30;bottom:14px;left:14px;right:14px}.mobile-cta .btn{width:100%}footer{padding-bottom:88px}}
+@media(max-width:760px){.nav{height:74px;gap:10px}.brand{flex:0 0 112px;width:112px;min-width:112px;height:68px}.brand img{width:112px;height:66px;max-height:66px}.nav>.btn{padding:11px 13px;font-size:12px;white-space:nowrap}.links{display:none}.hero{padding:48px 0}.hero-grid,.format-grid{grid-template-columns:1fr;gap:28px}.hero-visual{min-height:390px;order:-1}.hero h1{font-size:43px;letter-spacing:-.012em;word-spacing:.035em}.section{padding:62px 0}.paths,.investment{grid-template-columns:1fr}.audience{grid-template-columns:1fr}.offer{grid-template-columns:1fr}.offer .btn{width:100%}.ticker .wrap{justify-content:flex-start}.platform-card{padding:16px}.route{min-height:260px}.phone,.product-stack{height:135px}.mobile-cta{display:block;position:fixed;z-index:30;bottom:14px;left:14px;right:14px}.mobile-cta .btn{width:100%}footer{padding-bottom:88px}}
 @media(max-width:380px){.hero h1{font-size:37px}.hero-actions .btn{width:100%}.route{padding:12px}.route h3{font-size:20px}.platform-top{font-size:9px}.visual-foot{font-size:10px}}
 </style>
 </head>
@@ -143,8 +141,109 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 <div class="visual-orbit"></div><div class="platform-card">
 <div class="platform-top"><span>ARCANO MASTERCLASS</span><span class="live-dot">TIKTOK SHOP</span></div>
 <div class="platform-grid">
-<article class="route creator"><span class="route-label">CAMINHO 01</span><div class="phone"></div><div><h3>CREATOR</h3><p>Conteúdo, audiência e monetização.</p></div></article>
-<article class="route seller"><span class="route-label">CAMINHO 02</span><div class="product-stack"><div class="product-box"></div></div><div><h3>SELLER</h3><p>Loja, produtos e operação de vendas.</p></div></article>
+<article class="route creator"><span class="route-label">CAMINHO 01</span><div class="card-visual creator-visual"><svg viewBox="0 0 360 220" role="img" aria-label="Criadora de conteúdo gravando um vídeo com celular e ring light" xmlns="http://www.w3.org/2000/svg">
+<defs>
+ <linearGradient id="cr-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b2535"/><stop offset=".58" stop-color="#122b39"/><stop offset="1" stop-color="#111522"/></linearGradient>
+ <linearGradient id="cr-shirt" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#293c63"/><stop offset="1" stop-color="#17182b"/></linearGradient>
+ <linearGradient id="cr-skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7c6a8"/><stop offset="1" stop-color="#c87f68"/></linearGradient>
+ <linearGradient id="cr-hair" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#281a28"/><stop offset=".55" stop-color="#0e111c"/><stop offset="1" stop-color="#4c2545"/></linearGradient>
+ <linearGradient id="cr-phone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1b3345"/><stop offset="1" stop-color="#090d18"/></linearGradient>
+ <radialGradient id="cr-glow"><stop stop-color="#16c8e8" stop-opacity=".6"/><stop offset="1" stop-color="#16c8e8" stop-opacity="0"/></radialGradient>
+ <filter id="cr-blur"><feGaussianBlur stdDeviation="16"/></filter>
+ <filter id="cr-shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur in="SourceAlpha" stdDeviation="7"/><feOffset dy="7"/><feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="360" height="220" rx="16" fill="url(#cr-bg)"/>
+<circle cx="45" cy="20" r="85" fill="#16c8e8" opacity=".18" filter="url(#cr-blur)"/>
+<circle cx="318" cy="190" r="95" fill="#ec238d" opacity=".17" filter="url(#cr-blur)"/>
+<rect x="0" y="160" width="360" height="60" fill="#090d17" opacity=".42"/>
+<path d="M0 48h58M0 58h42M296 36h64" stroke="#54c9df" stroke-opacity=".24" stroke-width="2"/>
+<circle cx="77" cy="93" r="49" fill="none" stroke="#f7e8e8" stroke-opacity=".18" stroke-width="17"/>
+<circle cx="77" cy="93" r="49" fill="none" stroke="#ffffff" stroke-width="7"/>
+<circle cx="77" cy="93" r="61" fill="none" stroke="#16c8e8" stroke-opacity=".3" stroke-width="2"/>
+<path d="M77 151v46M77 177l-22 38M77 177l24 38" stroke="#8aa7b3" stroke-width="4" stroke-linecap="round"/>
+<g opacity=".75"><rect x="12" y="19" width="18" height="30" rx="4" fill="#162e3e"/><rect x="15" y="23" width="12" height="20" rx="2" fill="#284b5b"/></g>
+<!-- creator silhouette -->
+<path d="M188 220c4-39 21-59 50-67 12-4 30-4 42 1 32 13 42 33 47 66z" fill="url(#cr-shirt)"/>
+<path d="M224 156l25 19 26-19 17 11-17 53h-57l-13-52z" fill="#171c31"/>
+<path d="M238 137l-2 26 16 14 16-16-3-24z" fill="url(#cr-skin)"/>
+<path d="M218 82c0-27 18-44 44-44 26 0 41 19 39 46l-6 35c-4 18-19 31-37 31-19 0-34-15-38-33z" fill="url(#cr-skin)"/>
+<path d="M215 95c-8-34 4-65 37-70 28-5 52 11 57 37 3 17-2 34-8 47l-4-25c-3-19-13-30-29-34-14 16-30 23-52 24z" fill="url(#cr-hair)"/>
+<path d="M218 92c-10 17-8 47 9 63l-18-8c-13-22-12-53 0-70zM296 78c13 15 14 37 7 55-5 12-13 21-24 26 13-23 12-49 5-68z" fill="url(#cr-hair)"/>
+<path d="M237 105q8-6 16 0M268 105q8-6 16 0" stroke="#49303a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<path d="M249 125q10 8 21 0" stroke="#9b4f58" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<circle cx="229" cy="117" r="4" fill="#f4a9a2" opacity=".7"/>
+<path d="M222 75q12-8 22-2M268 72q11-5 21 2" stroke="#201422" stroke-width="4" fill="none" stroke-linecap="round"/>
+<!-- phone, tripod and live interface -->
+<g filter="url(#cr-shadow)" transform="rotate(-4 151 115)">
+ <rect x="121" y="41" width="66" height="122" rx="12" fill="#050911" stroke="#526b7b" stroke-width="2"/>
+ <rect x="126" y="49" width="56" height="105" rx="7" fill="url(#cr-phone)"/>
+ <rect x="145" y="44" width="18" height="3" rx="2" fill="#758795"/>
+ <circle cx="154" cy="99" r="16" fill="#1abfdc" opacity=".2"/>
+ <path d="M149 91l14 8-14 8z" fill="#ffffff" opacity=".95"/>
+ <rect x="132" y="132" width="44" height="12" rx="5" fill="#ed1685" opacity=".9"/>
+ <circle cx="154" cy="138" r="3" fill="#fff"/>
+</g>
+<path d="M154 164v31m0-14-23 34m23-34 23 34" stroke="#91aebb" stroke-width="4" stroke-linecap="round"/>
+<g filter="url(#cr-shadow)">
+ <path d="M196 171h21l-4 27h-13z" fill="#111a28" stroke="#4b8294" stroke-width="1.5"/>
+ <rect x="198" y="164" width="17" height="10" rx="4" fill="#202c3d"/>
+</g>
+<circle cx="343" cy="25" r="3" fill="#ed1685"/><circle cx="326" cy="40" r="2" fill="#16c8e8"/><circle cx="342" cy="52" r="2" fill="#16c8e8"/>
+</svg></div><div><h3>CREATOR</h3><p>Conteúdo, audiência e monetização.</p></div></article>
+<article class="route seller"><span class="route-label">CAMINHO 02</span><div class="card-visual seller-visual"><svg viewBox="0 0 360 220" role="img" aria-label="Operação de loja online com notebook e pedidos embalados" xmlns="http://www.w3.org/2000/svg">
+<defs>
+ <linearGradient id="sl-bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#351329"/><stop offset=".52" stop-color="#241426"/><stop offset="1" stop-color="#11121b"/></linearGradient>
+ <linearGradient id="sl-box" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e7bd91"/><stop offset="1" stop-color="#a96d48"/></linearGradient>
+ <linearGradient id="sl-box2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#dcae82"/><stop offset="1" stop-color="#87523d"/></linearGradient>
+ <linearGradient id="sl-screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1b3348"/><stop offset="1" stop-color="#0c1422"/></linearGradient>
+ <linearGradient id="sl-pink" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff6bb4"/><stop offset="1" stop-color="#bd1a73"/></linearGradient>
+ <radialGradient id="sl-glow"><stop stop-color="#ed1685" stop-opacity=".55"/><stop offset="1" stop-color="#ed1685" stop-opacity="0"/></radialGradient>
+ <filter id="sl-blur"><feGaussianBlur stdDeviation="18"/></filter>
+ <filter id="sl-shadow"><feGaussianBlur in="SourceAlpha" stdDeviation="6"/><feOffset dy="6"/><feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="360" height="220" rx="16" fill="url(#sl-bg)"/>
+<circle cx="320" cy="18" r="100" fill="#ed1685" opacity=".25" filter="url(#sl-blur)"/>
+<circle cx="34" cy="200" r="100" fill="#16c8e8" opacity=".12" filter="url(#sl-blur)"/>
+<path d="M0 168h360v52H0z" fill="#090d16" opacity=".5"/>
+<path d="M20 41l13-22 13 22M28 41V70" fill="none" stroke="#4c7b76" stroke-width="3" opacity=".5"/>
+<path d="M304 24h40M324 13v26" stroke="#ed1685" stroke-opacity=".42" stroke-width="2"/>
+<!-- laptop storefront panel -->
+<g filter="url(#sl-shadow)">
+ <path d="M166 30h160q8 0 8 8v101H158V38q0-8 8-8z" fill="#090d17" stroke="#8e557c" stroke-width="2"/>
+ <rect x="167" y="40" width="150" height="89" rx="3" fill="url(#sl-screen)"/>
+ <path d="M178 53h128" stroke="#6b7e99" stroke-opacity=".5" stroke-width="2"/>
+ <rect x="180" y="63" width="46" height="54" rx="5" fill="#1c3c50"/>
+ <path d="M188 81h29M188 89h23M188 97h27" stroke="#39b8ca" stroke-width="3" stroke-linecap="round"/>
+ <path d="M242 83h58v34h-58z" fill="#122337" stroke="#ed1685" stroke-width="1.4"/>
+ <path d="M251 83v-9a20 20 0 0140 0v9" fill="none" stroke="#ed1685" stroke-width="4"/>
+ <path d="M235 139h74l19 13H215z" fill="#72818e" stroke="#c4ccd2" stroke-opacity=".5"/>
+ <path d="M247 144h41" stroke="#202c3b" stroke-width="3" stroke-linecap="round"/>
+</g>
+<!-- package group -->
+<g filter="url(#sl-shadow)">
+ <path d="M23 124l68-24 69 25-69 28z" fill="#edc69c"/>
+ <path d="M23 124l68 29v55l-68-31z" fill="url(#sl-box2)"/>
+ <path d="M91 153l69-28v52l-69 31z" fill="url(#sl-box)"/>
+ <path d="M23 124l68-24 69 25-69 28z" fill="none" stroke="#f6d8b7" stroke-opacity=".65" stroke-width="2"/>
+ <path d="M82 105l17 8-7 4-17-8z" fill="#f6dfc5"/>
+ <path d="M82 105v26l10 5v-24" fill="#c68e68" opacity=".8"/>
+ <rect x="57" y="160" width="29" height="17" rx="2" fill="#f4e8db" transform="rotate(22 57 160)"/>
+ <path d="M62 165l17 7" stroke="#bb6c64" stroke-width="2"/>
+</g>
+<g filter="url(#sl-shadow)">
+ <path d="M100 83l45-17 47 18-47 19z" fill="#f0cfaa"/>
+ <path d="M100 83l45 20v42l-45-19z" fill="#ac704e"/>
+ <path d="M145 103l47-19v41l-47 20z" fill="#c48a60"/>
+ <path d="M100 83l45-17 47 18-47 19z" fill="none" stroke="#ffe5cc" stroke-opacity=".6" stroke-width="2"/>
+ <path d="M139 69l11 5-5 4-12-5z" fill="#f9e3c9"/>
+</g>
+<!-- shipping label and route line -->
+<rect x="38" y="186" width="70" height="21" rx="5" fill="#161d2a" stroke="#ed1685" stroke-opacity=".7"/>
+<path d="M48 192h32M48 197h23" stroke="#f6d7e6" stroke-width="2" stroke-linecap="round"/>
+<path d="M215 183c28 15 52 15 79 0" stroke="#ed1685" stroke-width="2.5" stroke-dasharray="5 6" fill="none" opacity=".85"/>
+<circle cx="214" cy="183" r="5" fill="#16c8e8"/><circle cx="295" cy="183" r="5" fill="#ed1685"/>
+<path d="M287 175l8 8-8 8" fill="none" stroke="#ed1685" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div><div><h3>SELLER</h3><p>Loja, produtos e operação de vendas.</p></div></article>
 </div>
 <div class="visual-foot"><span>Dois módulos</span><strong>Uma formação presencial · 2h</strong></div>
 </div></div>
