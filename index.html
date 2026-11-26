@@ -93,6 +93,9 @@ header{position:sticky;top:0;z-index:20;background:rgba(8,8,13,.88);backdrop-fil
 .module b{font:700 19px Manrope}
 .module small{color:var(--muted)}
 .module .time{color:var(--blue);font-weight:800;white-space:nowrap}
+.weekly-session{border:1px solid var(--line);border-radius:15px;padding:4px 16px;margin-top:15px;background:#11111a}
+.weekly-heading{display:flex;align-items:center;justify-content:space-between;padding:12px 0 6px;font-size:11px;letter-spacing:.14em;color:var(--blue);font-weight:800}
+.weekly-heading span{color:var(--muted);font-size:10px}
 .support-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .support-card{padding:25px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(150deg,#171720,#101016)}
 .support-number{font-size:12px;font-weight:800;letter-spacing:.16em;color:var(--blue)}
@@ -126,7 +129,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 .foot strong{color:white}
 .mobile-cta{display:none}
 @media(max-width:900px){.links{gap:16px}.hero-grid{gap:30px}.hero h1{font-size:54px}.hero-visual{min-height:430px}.visual-orbit{width:360px;height:360px}}
-@media(max-width:760px){.support-grid{grid-template-columns:1fr}.support-card{padding:22px}.nav{height:74px;gap:10px}.brand{flex:0 0 112px;width:112px;min-width:112px;height:68px}.brand img{width:112px;height:66px;max-height:66px}.nav>.btn{padding:11px 13px;font-size:12px;white-space:nowrap}.links{display:none}.hero{padding:48px 0}.hero-grid,.format-grid{grid-template-columns:1fr;gap:28px}.hero-visual{min-height:390px;order:-1}.hero h1{font-size:43px;letter-spacing:-.012em;word-spacing:.035em}.section{padding:62px 0}.paths,.investment{grid-template-columns:1fr}.audience{grid-template-columns:1fr}.offer{grid-template-columns:1fr}.offer .btn{width:100%}.ticker .wrap{justify-content:flex-start}.platform-card{padding:16px}.route{min-height:260px}.phone,.product-stack{height:135px}.mobile-cta{display:block;position:fixed;z-index:30;bottom:14px;left:14px;right:14px}.mobile-cta .btn{width:100%}footer{padding-bottom:88px}}
+@media(max-width:760px){.weekly-session{padding-inline:12px}.weekly-session .module{gap:12px}.weekly-session .module b{font-size:16px}.weekly-session .module small{font-size:12px}.support-grid{grid-template-columns:1fr}.support-card{padding:22px}.nav{height:74px;gap:10px}.brand{flex:0 0 112px;width:112px;min-width:112px;height:68px}.brand img{width:112px;height:66px;max-height:66px}.nav>.btn{padding:11px 13px;font-size:12px;white-space:nowrap}.links{display:none}.hero{padding:48px 0}.hero-grid,.format-grid{grid-template-columns:1fr;gap:28px}.hero-visual{min-height:390px;order:-1}.hero h1{font-size:43px;letter-spacing:-.012em;word-spacing:.035em}.section{padding:62px 0}.paths,.investment{grid-template-columns:1fr}.audience{grid-template-columns:1fr}.offer{grid-template-columns:1fr}.offer .btn{width:100%}.ticker .wrap{justify-content:flex-start}.platform-card{padding:16px}.route{min-height:260px}.phone,.product-stack{height:135px}.mobile-cta{display:block;position:fixed;z-index:30;bottom:14px;left:14px;right:14px}.mobile-cta .btn{width:100%}footer{padding-bottom:88px}}
 @media(max-width:380px){.hero h1{font-size:37px}.hero-actions .btn{width:100%}.route{padding:12px}.route h3{font-size:20px}.platform-top{font-size:9px}.visual-foot{font-size:10px}}
 </style>
 </head>
@@ -140,9 +143,9 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 <section class="hero"><div class="wrap hero-grid">
 <div><div class="eyebrow">Formação presencial · Caldas Novas – GO</div>
 <h1>O TikTok tem dois caminhos. <em>Aprenda a atuar nos dois.</em></h1>
-<p class="lead">São duas aulas presenciais de 2 horas: uma dedicada ao Creator e outra ao Seller. Depois, você conta com 15 dias de acompanhamento, planner de execução para 30 dias e acesso à comunidade Arcano.</p>
+<p class="lead">São dois encontros presenciais, com um encontro por semana. Em cada aula, você terá 1 hora de TikTok Creator e 1 hora de TikTok Seller. Ao longo da jornada, também conta com 15 dias de acompanhamento, planner de execução para 30 dias e acesso à comunidade Arcano.</p>
 <div class="hero-actions"><a class="btn" href="https://wa.me/5562981201160?text=Ol%C3%A1%2C%20quero%20receber%20as%20informa%C3%A7%C3%B5es%20da%20pr%C3%B3xima%20Arcano%20Masterclass.">Consultar próxima turma ↗</a><a class="btn outline" href="#formacao">Conhecer a formação</a></div>
-<div class="proof">4 horas presenciais · 2 aulas de 2h · 15 dias de acompanhamento</div></div>
+<div class="proof">2 encontros · 1 por semana · 1h Creator + 1h Seller em cada aula</div></div>
 <div class="hero-visual" aria-label="Os dois caminhos da Masterclass: Creator e Seller">
 <div class="visual-orbit"></div><div class="platform-card">
 <div class="platform-top"><span>ARCANO MASTERCLASS</span><span class="live-dot">TIKTOK SHOP</span></div>
@@ -150,7 +153,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 <article class="route creator"><span class="route-label">CAMINHO 01</span><div class="card-visual creator-visual"><img src="/assets/creator-card.webp" alt="Criadora de conteúdo gravando um vídeo para uma plataforma digital" loading="lazy" decoding="async"></div><div><h3>CREATOR</h3><p>Conteúdo, audiência e monetização.</p></div></article>
 <article class="route seller"><span class="route-label">CAMINHO 02</span><div class="card-visual seller-visual"><img src="/assets/seller-card-v2.webp" alt="Empreendedora preparando uma encomenda para uma loja online" loading="lazy" decoding="async"></div><div><h3>SELLER</h3><p>Loja, produtos e operação de vendas.</p></div></article>
 </div></div>
-<div class="visual-foot"><span>Dois encontros presenciais</span><strong>4h de formação · 15 dias de acompanhamento</strong></div>
+<div class="visual-foot"><span>Um encontro por semana</span><strong>2h por encontro · Creator + Seller</strong></div>
 </div></div>
 </div></section>
 <div class="ticker"><div class="wrap"><span><strong>CREATOR</strong> · Conteúdo e monetização</span><span><strong>SELLER</strong> · Loja e vendas</span><span><strong>ARCANO ACADEMY</strong> · Formação para o mercado digital</span></div></div>
@@ -161,11 +164,11 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 <article class="path seller" id="seller"><div class="num">CAMINHO 02 · TIKTOK SHOP SELLER</div><h3>SELLER</h3><p>Estruturação e funcionamento do TikTok Shop Seller para desenvolver uma operação comercial com estratégia e visão de resultados.</p><ul><li>Cadastro, seleção e precificação estratégica de produtos</li><li>Estratégias de vendas com vídeos, creators e afiliados</li><li>Live Commerce: estruturação e conversão em vendas</li><li>Gestão de operação, métricas, rentabilidade e escala</li></ul></article>
 </div></div></section>
 <section class="section darkband" id="formato"><div class="wrap format-grid">
-<div><div class="eyebrow">Como funciona</div><h2>Duas aulas de 2 horas. Formação e direção para executar.</h2><p style="color:var(--muted)">A formação presencial acontece em duas aulas de 2 horas: uma sobre TikTok Creator e outra sobre TikTok Shop Seller. Você participa dos dois caminhos e aprofunda o que precisa para criar, monetizar e vender na plataforma.</p><a class="btn" href="https://wa.me/5562981201160?text=Quero%20consultar%20a%20pr%C3%B3xima%20turma%20da%20Arcano%20Masterclass.">Consultar disponibilidade ↗</a></div>
-<div class="format-card"><div class="duration">4h <span>de formação presencial · 2 aulas</span></div>
-<div class="module"><div><b>Aula 01 · TikTok Creator</b><br><small>Posicionamento, conteúdo, afiliados, persuasão e Live Commerce</small></div><div class="time">02 horas</div></div>
-<div class="module"><div><b>Aula 02 · TikTok Seller</b><br><small>Loja, produtos, vendas, operação e métricas</small></div><div class="time" style="color:var(--pink)">02 horas</div></div>
-<p style="font-size:13px;color:var(--muted);margin:18px 0 0">Presencial · Caldas Novas – GO</p></div>
+<div><div class="eyebrow">Como funciona</div><h2>Dois encontros. Um por semana. Os dois caminhos em cada aula.</h2><p style="color:var(--muted)">A formação acontece ao longo de duas semanas, com um encontro presencial por semana. Cada encontro tem 2 horas: 1 hora dedicada ao TikTok Creator e 1 hora ao TikTok Shop Seller. Assim, você acompanha os dois caminhos nas duas aulas e evolui de forma integrada.</p><a class="btn" href="https://wa.me/5562981201160?text=Quero%20consultar%20a%20pr%C3%B3xima%20turma%20da%20Arcano%20Masterclass.">Consultar disponibilidade ↗</a></div>
+<div class="format-card"><div class="duration">2 <span>encontros presenciais · 1 por semana</span></div>
+<div class="weekly-session"><div class="weekly-heading"><b>ENCONTRO 01</b><span>SEMANA 01</span></div><div class="module"><div><b>TikTok Creator</b><br><small>Conteúdo, posicionamento e monetização</small></div><div class="time">01 hora</div></div><div class="module"><div><b>TikTok Seller</b><br><small>Loja, produtos e estratégia de vendas</small></div><div class="time" style="color:var(--pink)">01 hora</div></div></div>
+<div class="weekly-session"><div class="weekly-heading"><b>ENCONTRO 02</b><span>SEMANA 02</span></div><div class="module"><div><b>TikTok Creator</b><br><small>Conteúdo, persuasão e Live Commerce</small></div><div class="time">01 hora</div></div><div class="module"><div><b>TikTok Seller</b><br><small>Operação, métricas e Live Commerce</small></div><div class="time" style="color:var(--pink)">01 hora</div></div></div>
+<p style="font-size:13px;color:var(--muted);margin:18px 0 0">Presencial · Caldas Novas – GO · 2 horas por encontro</p></div>
 </div></section>
 <section class="section support-section"><div class="wrap">
 <div class="section-head"><div class="eyebrow">Além das aulas</div><h2>O aprendizado continua depois dos encontros.</h2><p>Você não recebe apenas o conteúdo das duas aulas. A formação inclui suporte para ajudar a transformar o que aprendeu em ações práticas.</p></div>
@@ -177,14 +180,14 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-s
 <section class="section"><div class="wrap"><div class="section-head"><div class="eyebrow">Para quem é</div><h2>Uma formação para diferentes pontos de partida.</h2><p>Você não precisa ser influencer nem já ter uma loja ativa. As duas aulas apresentam estratégias para quem quer desenvolver presença como Creator e para quem deseja estruturar vendas como Seller.</p></div>
 <div class="audience"><article><b>Quer construir autoridade como Creator?</b><p>Aprenda posicionamento, conteúdo estratégico, afiliados, persuasão e Live Commerce.</p></article><article><b>Tem um negócio ou quer vender?</b><p>Conheça a operação Seller, a seleção de produtos, a precificação e as estratégias de vendas.</p></article><article><b>Já atua no TikTok Shop?</b><p>Aprofunde estratégias e organize a execução com acompanhamento e planner.</p></article></div></div></section>
 <section class="section" id="investimento"><div class="wrap"><div class="section-head"><div class="eyebrow">Inscrição</div><h2>Escolha como participar.</h2><p>Você pode participar individualmente ou levar mais uma pessoa para viver a formação com você.</p></div>
-<div class="investment"><article class="price-card"><small>INGRESSO INDIVIDUAL</small><div class="price">R$ 297</div><p>1 participante · duas aulas de 2h, 15 dias de acompanhamento, planner de 30 dias e comunidade.</p></article><article class="price-card featured"><small>INGRESSO DUPLA</small><div class="price">R$ 500</div><p>2 participantes · duas aulas, acompanhamento, planner e comunidade para cada pessoa.</p></article></div>
+<div class="investment"><article class="price-card"><small>INGRESSO INDIVIDUAL</small><div class="price">R$ 297</div><p>1 participante · 2 encontros semanais, com Creator e Seller em cada aula, acompanhamento, planner e comunidade.</p></article><article class="price-card featured"><small>INGRESSO DUPLA</small><div class="price">R$ 500</div><p>2 participantes · 2 encontros semanais com Creator e Seller em cada aula, acompanhamento, planner e comunidade para cada pessoa.</p></article></div>
 <p style="color:var(--muted);font-size:13px;margin:16px 0 0">Consulte pelo WhatsApp as datas disponíveis e as orientações para confirmar sua vaga.</p>
 </div></section>
 <section class="section"><div class="wrap offer"><div><div class="eyebrow">Próxima turma</div><h2>Duas aulas para aprender. Trinta dias para colocar em prática.</h2><p>São duas aulas presenciais de 2 horas, com 15 dias de acompanhamento, planner de execução para 30 dias e acesso à comunidade. Fale com a equipe Arcano para consultar datas e disponibilidade.</p></div><a class="btn" href="https://wa.me/5562981201160?text=Ol%C3%A1%21%20Quero%20consultar%20datas%20e%20vagas%20da%20Arcano%20Masterclass.">Falar com a Arcano ↗</a></div></section>
 <section class="section" id="duvidas"><div class="wrap faq"><div class="section-head"><div class="eyebrow">Dúvidas frequentes</div><h2>Antes de reservar sua vaga.</h2></div>
 <details><summary>Preciso ter experiência com TikTok?</summary><p>Não. As aulas foram estruturadas para apresentar e desenvolver os caminhos Creator e Seller, inclusive para quem está começando.</p></details>
-<details><summary>Preciso escolher entre Creator e Seller?</summary><p>Não. A formação inclui as duas aulas: 2 horas dedicadas ao TikTok Creator e 2 horas ao TikTok Shop Seller.</p></details>
-<details><summary>Quanto tempo dura a formação?</summary><p>São duas aulas presenciais de 2 horas cada, totalizando 4 horas de formação.</p></details>
+<details><summary>Preciso escolher entre Creator e Seller?</summary><p>Não. Em cada encontro você participa dos dois conteúdos: 1 hora de TikTok Creator e 1 hora de TikTok Shop Seller.</p></details>
+<details><summary>Como são organizadas as aulas?</summary><p>São dois encontros presenciais, com um encontro por semana. Cada encontro dura 2 horas: 1 hora de Creator e 1 hora de Seller. No total, são 4 horas de formação, distribuídas ao longo de duas semanas.</p></details>
 <details><summary>O que acontece depois das aulas?</summary><p>Você recebe 15 dias de acompanhamento, um planner de execução para 30 dias e acesso à comunidade Arcano para trocar insights, tirar dúvidas e acompanhar sua evolução.</p></details>
 <details><summary>Onde acontece a Masterclass?</summary><p>Em Caldas Novas – GO. Consulte a equipe Arcano para confirmar o local e a data da próxima turma.</p></details>
 <details><summary>Como consulto a próxima data e faço minha inscrição?</summary><p>Entre em contato pelo WhatsApp da Arcano Academy para receber as datas disponíveis e as instruções de inscrição.</p></details>
